@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$prmryColor: #99FEF2;
+$scndColor: #03C6CA;
+$tertColor: #B6E855;
+$foreColor: #000000;
+$poppins: 'Poppins', sans-serif;
+
+@mixin fCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $prmryColor;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    #outlogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    #loginBox {
+        width: 921px;
+        height: 611px;
+        overflow-y: hidden;
+        position: relative;
+        border-radius: 20px;
+        
+        background-color: white;
+        
+        #side1 {
+            position: relative;
+            @include fCenter();
+            #logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            #lineM {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        #side2 {
+            position: relative;
+            @include fCenter();
+            flex-direction: column;
+            justify-content: start;
+            h4 {
+                position: relative;
+                height: 200px;
+                @include fCenter();
+                //justify-content: flex-start;
+                font-family: $poppins;
+                font-weight: 800;
+            }
+            label {
+                width: 100%;
+                font-family: $poppins;
+                font-size: 15px;
+                font-weight: 700;
+            }
+            input[type=text] {
+                width: 380px;
+                height: 40px;
+                background-color: #F8CCD5;
+                border-radius: 5px;
+                padding: 5px 10px;
+                border: none;
+                outline: none;
+                position: relative;
+                margin: 0;
+            }
+            input[type=password] {
+                width: 380px;
+                height: 40px;
+                background-color: #F8CCD5;
+                border-radius: 5px;
+                padding: 5px 10px;
+                border: none;
+                outline: none;
+                position: relative;
+                margin: 0;
+            }
+            input[type=checkbox] {
+                display: none;
+            }
+            #eyeLbl {
+                width: 20px;
+                height: 20px;
+                @include fCenter();
+                cursor: pointer;
+            }
+            form div {
+                width: 380px;
+                position: relative;
+                label {
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+            button[type=submit] {
+                border: none;
+                outline: none;
+                width: 370px;
+                height: 50px;
+                background-color: #DB8498;
+                border-radius: 20px;
+                margin: 50px 0px;
+                font-size: 15px;
+                font-weight: 700;
+                font-family: $poppins;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 712px) {
+    main {
+        width: 100%;
+        height: 100%;
+        #outlogo {
+            display: block;
+        }
+        #loginBox {
+            width:300px;
+            height: 409px;
+        } 
+        #side1 {
+            position: relative;
+            #logo {
+                display: none;
+            }
+        }
+        #side2 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            justify-content: start;
+            h4 {
+                position: relative;
+                font-size: 15px;
+                justify-content: start !important;
+                height: 40px !important;
+            }
+            label {
+                font-size: 12px !important;
+            }
+            input[type=text] {
+                width: 250px !important;
+            }
+            form div {
+                width: 100% !important;
+            }
+            button[type=submit] {
+                width: 250px !important;
+            }
+        }
+    }
+}

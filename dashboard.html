@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-lg-row flex-column p-0">
+        <header class="col-12 col-lg-0 border"><button id="menu" class="btn"><img src="./assets/iconamoon_menu-burger-horizontal-bold.png" alt=""></button></label>
+        </header>
+        <nav class="col-lg-2 col-0 position-sm-absolute d-flex justify-content-center flex-column">
+            <button id="close" class="btn"><img src="./assets/Close.png" alt=""></button>
+            <img class="position-absolute top-0" src="./assets/logo.png" alt="Electri'Co">
+            <h4 id="usernameTxt">Username</h4> 
+            <a href="" id="dashBtn"><img src="./assets/radix-icons_dashboard.png" alt="">Dashboard</a>
+            <a href="" id="usageBtn"><img src="./assets/solar_graph-up-linear.png" alt="">Usage Calculator</a>
+            <a href="" id="appBtn"><img src="./assets/mdi_tv.png" alt="">Appliance Calculator</a>
+            <a href="" id="accBtn"><img src="./assets/mdi_account-outline.png" alt="">Account</a>
+        </nav>
+        <main class="col-lg-10 col-12 p-0 gap-0 d-flex flex-column">
+            <h3 class="col-12 d-flex justify-content-start align-items-center p-5 m-0">DASHBOARD</h3>
+            <div class="col-12 d-flex flex-row justify-content-start align-items-center px-5    " id="dropSet">
+                <div class="col-lg-2 col-4  dropDownsbox">
+                    <p>Month</p>
+                    <select name="month" id="monthDrop">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-4 dropDownsbox">
+                    <p>Year</p>
+                    <select name="year" id="yearDrop">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12 border ,-5">
+                <div class="col-8">
+
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="dashboard.js" type="text/javascript"></script>
+    </body>
+</html>
